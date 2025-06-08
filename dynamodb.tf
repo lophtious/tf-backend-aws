@@ -1,5 +1,5 @@
 resource "aws_dynamodb_table" "dynamodb" {
-  name = "${var.env}-${var.product}-${var.project}-state-lock"
+  name = "${var.env}-${var.product}-${var.project}-state-lock-${random_string.suffix.id}"
   hash_key = "LockID"
   read_capacity = 20
   write_capacity = 20
