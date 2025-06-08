@@ -5,6 +5,6 @@ resource "aws_kms_key" "backend_bucket_key" {
 }
 
 resource "aws_kms_alias" "backend_bucket_key_alias"{
-  name          = "/${var.env}/${var.product}/${var.project}-${random_string.suffix.id}"
+  name          = "alias/${var.env}/${var.product}-${var.project}-${random_string.suffix.id}"
   target_key_id = aws_kms_key.backend_bucket_key.id
 }
