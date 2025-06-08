@@ -37,13 +37,3 @@ variable "region" {
   description = "region"
   type        = string
 }
-
-variable "iam" {
-  description = "iam value"
-  type        = string
-}
-
-variable "group_name" {
-  description = "group value"
-  type        = string
-}
