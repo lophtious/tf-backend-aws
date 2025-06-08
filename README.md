@@ -1,6 +1,5 @@
 # Terraform Module: <tf-backend-aws>
 
-[![License](https://img.shields.io/github/license/<ORG>/<REPO>.svg)](LICENSE)
 [![Terraform](https://img.shields.io/badge/Terraform-%3E%3D%200.13-purple.svg)](https://www.terraform.io/)
 
 ## Overview

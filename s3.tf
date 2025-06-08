@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket = "${var.env}-${var.product}-${var.project}-tf-state-${random_string.suffix.id}"
+  bucket        = "${var.env}-${var.product}-${var.project}-tf-state-${random_string.suffix.id}"
   force_destroy = true
 }
 
@@ -8,7 +8,7 @@ resource "aws_s3_bucket_server_side_encryption_configuration" "terraform_state" 
 
   rule {
     apply_server_side_encryption_by_default {
-      sse_algorithm = "aws:kms"
+      sse_algorithm     = "aws:kms"
       kms_master_key_id = aws_kms_key.terraform_state.id
     }
   }
