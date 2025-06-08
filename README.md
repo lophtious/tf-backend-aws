@@ -41,7 +41,7 @@ terraform apply
 
 ## Folder Structure
 
-.
+```
 ├── README.md
 ├── dynamodb.tf
 ├── kms.tf
@@ -50,6 +50,6 @@ terraform apply
 ├── random.tf
 ├── s3.tf
 └── variables.tf
-
+```
 
 Let me know if you'd like it tailored to a specific cloud provider (e.g., AWS, Azure, GCP), or if you want me to generate the `Inputs`/`Outputs` table from your Terraform code.
