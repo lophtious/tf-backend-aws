@@ -1,5 +1,5 @@
 variable "naming_prefix" {
-  description = "naming prefix for resource tagging"
+  description = "prefix for resource naming"
   type        = string
 }
 
@@ -14,22 +14,22 @@ variable "iaac_platform" {
 }
 
 variable "team" {
-  description = "Name of Team that owns the components being deployed or Stakeholder"
+  description = "short name of team that own the components being deployed"
   type        = string
 }
 
 variable "product" {
-  description = "name of product or software used by project"
+  description = "name of product or software used by the project"
   type        = string
 }
 
 variable "project" {
-  description = "name of project"
+  description = "name of the project"
   type        = string
 }
 
 variable "env" {
-  description = "Environment - PROD | OPS | QA | DEV |"
+  description = "Environment - DEV | QA | PROD"
   type        = string
 }
 
