@@ -29,6 +29,7 @@ module "tf-backend-aws" {
   env             = var.env
   team            = var.team
 }
+```
 
 ## Example
 
