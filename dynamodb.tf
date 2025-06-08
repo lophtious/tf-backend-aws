@@ -1,4 +1,4 @@
-resource "aws_dynamodb_table" "terraform-state" {
+resource "aws_dynamodb_table" "terraform_state" {
   name = "${var.env}-${var.product}-${var.project}-tf-state-${random_string.suffix.id}"
   hash_key = "LockID"
   read_capacity = 20
