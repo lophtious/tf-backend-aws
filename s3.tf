@@ -1,5 +1,5 @@
 resource "aws_s3_bucket" "terraform_state" {
-  bucket        = "${var.env}-${var.project}-${var.product}-terraform-${random_string.suffix.id}"
+  bucket        = "${var.env}-${var.project}-${var.product}-bucket-${random_string.suffix.id}"
   force_destroy = true
 }
 
