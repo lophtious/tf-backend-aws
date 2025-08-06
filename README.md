@@ -1,4 +1,4 @@
-# Terraform Module: <tf-backend-aws> v1.0.0
+# Terraform Module: <tf-backend-aws> v1.0.1
 
 [![Terraform](https://img.shields.io/badge/Terraform-%3E%3D%200.13-purple.svg)](https://www.terraform.io/)
 
