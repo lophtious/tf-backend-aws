@@ -1,4 +1,4 @@
-# Terraform Module: <tf-backend-aws> v1.0.1
+# Terraform Module: <tf-backend-aws> v1.0.5
 
 [![Terraform](https://img.shields.io/badge/Terraform-%3E%3D%200.13-purple.svg)](https://www.terraform.io/)
 
@@ -50,5 +50,3 @@ terraform apply
 ├── s3.tf
 └── variables.tf
 ```
-
-Let me know if you'd like it tailored to a specific cloud provider (e.g., AWS, Azure, GCP), or if you want me to generate the `Inputs`/`Outputs` table from your Terraform code.
