@@ -1,7 +1,7 @@
 resource "aws_kms_key" "terraform_state" {
   description             = "Key to encrypt S3 backend bucket"
-  deletion_window_in_days = 10
-  enable_key_rotation     = true
+  deletion_window_in_days = var.kms_key_deletion_window_in_days
+  enable_key_rotation     = var.kms_key_enable_key_rotation
 }
 
 resource "aws_kms_alias" "terraform_state" {

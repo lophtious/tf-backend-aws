@@ -37,3 +37,39 @@ variable "region" {
   description = "region"
   type        = string
 }
+
+variable "kms_key_deletion_window_in_days" {
+  description = "deletion_window_in_days"
+  type        = number
+  default     = 90
+}
+
+variable "kms_key_enable_key_rotation" {
+  description = "enable_key_rotation"
+  type        = bool
+  default     = true
+}
+
+variable "tf_provider_version_random" {
+  description = "Terraform Provider version - Hashicorp/Random"
+  type        = string
+  default     = "3.6.3"
+}
+
+variable "kms_key_deletion_window_in_days" {
+  description = "deletion_window_in_days"
+  type        = number
+  default     = 90
+}
+
+variable "dynamodb_default_read_capacity" {
+  description = "read_capacity for 'lock state' DynamoDB Table"
+  type        = number
+  default     = 10
+}
+
+variable "dynamodb_default_write_capacity" {
+  description = "write_capacity for 'lock state' DynamoDB Table"
+  type        = number
+  default     = 10
+}
